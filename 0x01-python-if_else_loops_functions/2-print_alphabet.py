@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-i in range('a','z')
-print(f{i :s})
+for alphabets in range(97,123):
+    print(f"{chr(alphabets)}", end = "")

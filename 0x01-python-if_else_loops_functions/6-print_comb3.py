@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-for num in range(0, 90):
-    if (num < 10):
-        print("{:02d}".format(num), end=", ")
-    elif (num != 89):
-        print("{}".format(num), end=", ")
+for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{}{}".format(digit1, digit2))
+        else:
+            print("{}{}".format(digit1, digit2), end=", ")

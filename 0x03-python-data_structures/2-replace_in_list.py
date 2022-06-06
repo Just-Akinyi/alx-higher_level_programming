@@ -2,7 +2,7 @@
 def replace_in_list(my_list, idx, element):
     if (idx < 0):
         return my_list
-    elif(0idx > my_list.len):
+    elif(0idx > len(my_list)):
         return my_list
-    else:
-        print(f"{[element]")
+    my_list[idx] = element
+    return my_list

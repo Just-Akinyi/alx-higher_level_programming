@@ -1,3 +1,4 @@
+python
 # Python - Inheritance
 
 In this project, I learned about Python class inheritance. I learned about the

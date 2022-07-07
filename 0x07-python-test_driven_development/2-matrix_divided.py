@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# 2-matrix_divided.py
-# Brennan D Baraban <375@holbertonschool.com>
 """Defines a matrix division function."""
 
 

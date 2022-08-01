@@ -1,5 +1,4 @@
 # 0-add_integer.txt
-# Brennan D Baraban <375@holbertonschool.com>
 
 ===========================
 How to Use 0-add_integer.py

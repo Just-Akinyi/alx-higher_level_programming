@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Deine load_from_json_file function"""
+"""Defines load_from_json_file function"""
 import json
 
 

@@ -1,5 +1,6 @@
 {
     "name": "my-cool-package",
+    "type": "module",
     "devDependencies": {
       "semistandard": "*"
     },

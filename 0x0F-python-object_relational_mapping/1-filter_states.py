@@ -14,3 +14,5 @@ if __name__ == "__main__":
     for state in allstates:
         if state[1][0] == 'N':
             print(state)
+            cur.close()
+            db.close()

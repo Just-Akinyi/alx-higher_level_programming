@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-takes in an argument and displays all values
-in the states table of hbtn_0e_0_usa
-where name matches the argument
+Lists all values in the states tables of a database where name
+matches the argument in a safe way
 """
 from sys import argv
 import MySQLdb

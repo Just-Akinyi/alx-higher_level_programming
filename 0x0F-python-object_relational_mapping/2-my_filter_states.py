@@ -13,4 +13,5 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states WHERE name = '{}'".format(argv[4]))
     allstates = cur.fetchall()
     for state in allstates:
-        print(state)
+        if state[1] == argv[4]:
+            print(state)

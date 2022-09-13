@@ -19,3 +19,5 @@ if __name__ == "__main__":
     for state in session.query(State):
         if state.id == 1:
             print("{}: {}".format(state.id, state.name))
+        elif state == None:
+            print ("Nothing")

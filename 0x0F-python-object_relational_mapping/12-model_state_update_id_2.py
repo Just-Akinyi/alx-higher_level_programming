@@ -17,7 +17,5 @@ if __name__ == "__main__":
     session = Session()
 
     new_state = session.query(State).filter(State.id == 2).first()
-    
-    if new_state:
-        new_state.name = "New Mexico"
-        session.commit()
+    new_state.name = "New Mexico"
+    session.commit()

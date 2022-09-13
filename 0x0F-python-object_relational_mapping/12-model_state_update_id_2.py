@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-lists all State objects from the database hbtn_0e_6_usa
+changes the name of a State object from the database hbtn_0e_6_usa
 """
 from model_state import Base, State
 from sqlalchemy import (create_engine)
@@ -16,6 +16,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    new_state = session.query(State).filter(State.id == 2)
-    new_state.name = "New Mexico"
-    session.commit()
+    new_state = session.query(State).filter(State.id == 2).first()
+    
+    if new_state:
+        new_state.name = "New Mexico"
+        session.commit()

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# Lists all States and corresponding Cities in the database hbtn_0e_101_usa.
-# Usage: ./101-relationship_states_cities_list.py <mysql username> /
+# Lists all City objects from the database hbtn_0e_101_usa.
+# Usage: ./102-relationship_cities_states_list.py <mysql username> /
 #                                                 <mysql password> /
 #                                                 <database name>
 import sys
@@ -16,8 +16,5 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for state in session.query(State).order_by(State.id):
-        print("{}: {}".format(state.id, state.name))
-        for city in state.cities:
-            print("    {}: {}".format(city.id, city.name))
-            
+    for city in session.query(City).order_by(City.id):
+        print("{}: {} -> {}".format(city.id, city.name, city.state.name))

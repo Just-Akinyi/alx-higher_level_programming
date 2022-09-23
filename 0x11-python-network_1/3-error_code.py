@@ -16,3 +16,5 @@ if __name__ == "__main__":
         urlopen(req)
     except HTTPError as err:
         print("Error code: {}".format(err.code))
+    else:
+        print("Index")

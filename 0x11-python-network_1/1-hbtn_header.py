@@ -11,6 +11,5 @@ if __name__ == "__main__":
     myUrl = argv[1]
 
     r = Request(myUrl)
-    # for key,value in header.items():
     with urlopen(r) as response:
         print(response.headers.get("X-Request-Id"))

@@ -13,6 +13,9 @@ if __name__ == "__main__":
     myUrl = argv[1]
     req = Request(myUrl)
     try:
-        urlopen(req)
+        with urlopen(req) as response:
+            print(response.read().decode("utf-8"))
     except HTTPError as err:
         print("Error code: {}".format(err.code))
+    else:
+        print("Index")

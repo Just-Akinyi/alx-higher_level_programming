@@ -17,5 +17,3 @@ if __name__ == "__main__":
             print(response.read().decode("utf-8"))
     except HTTPError as err:
         print("Error code: {}".format(err.code))
-    else:
-        print("Index")

@@ -1,3 +1,5 @@
-$('DIV#red_header').click(function(){
-    $('header').addClass('red');
-})
+$(function () {
+    $('#red_header').click(function () {
+      $('header').addClass('red');
+    });
+  });
